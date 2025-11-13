@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>santhosh Shop | Modern E-Commerce</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">santhosh Shop </div>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('products')">Products</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('login')">Login/Register</a>
+    </nav>
+  </header>
+  <section id="home" class="active">
+    <div class="hero">
+      <h1>Welcome to santhosh Shop</h1>
+      <p>Shop smarter, Shop faster, Explore the latest deals today!</p>
+      <button onclick="showSection('products')">Shop Now</button>
+    </div>
+  </section>
+  <section id="products">
+    <h2>Our Top Products</h2>
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="data:image/webp;base64,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" alt="Wireless Headphones" />
+        <h4>Wireless Headphones</h4>
+        <p>₹1,999</p>
+        <div class="actions">
+          <button onclick="addToWishlist(1)">❤️ Wishlist</button>
+          <button onclick="placeOrder(1)">🛒 Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61ZjlBOp+rL._SX679_.jpg" alt="Smart Watch" />
+        <h4>Smart Watch</h4>
+        <p>₹2,499</p>
+        <div class="actions">
+          <button onclick="addToWishlist(2)">❤️ Wishlist</button>
+          <button onclick="placeOrder(2)">🛒 Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.8HzYZNmrXMknula1rCAgFQHaHa?w=174&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Gaming Mouse" />
+        <h4>Gaming Mouse</h4>
+        <p>₹1,499</p>
+        <div class="actions">
+          <button onclick="addToWishlist(3)">❤️ Wishlist</button>
+          <button onclick="placeOrder(3)">🛒 Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://thumbs.dreamstime.com/z/stylish-bluetooth-speaker-isolated-white-background-modern-wireless-loudspeaker-music-play-142261104.jpg" alt="Bluetooth Speaker" />
+        <h4>Bluetooth Speaker</h4>
+        <p>₹1,299</p>
+        <div class="actions">
+          <button onclick="addToWishlist(4)">❤️ Wishlist</button>
+          <button onclick="placeOrder(4)">🛒 Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71kr3WAj1FL._SX679_.jpg" alt="Mechanical Keyboard" />
+        <h4>Mechanical Keyboard</h4>
+        <p>₹2,999</p>
+        <div class="actions">
+          <button onclick="addToWishlist(5)">❤️ Wishlist</button>
+          <button onclick="placeOrder(5)">🛒 Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.gRnzPNgYE8cHO-LxaMjdTAHaE7?w=290&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Power Bank" />
+        <h4>Power Bank</h4>
+        <p>₹999</p>
+        <div class="actions">
+          <button onclick="addToWishlist(6)">❤️ Wishlist</button>
+          <button onclick="placeOrder(6)">🛒 Buy Now</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lists">
+      <div>
+        <h3>Wishlist</h3>
+        <ul id="wishlist"></ul>
+      </div>
+      <div>
+        <h3>Your Orders</h3>
+        <ul id="orders"></ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: santhosh@neoshop.com</p>
+    <p>Phone: +91-7010823256</p>
+    <button onclick="alert('Thank you for your feedback!')">Report Issue</button>
+  </section>
+  <section id="about">
+    <h2>About NeoShop</h2>
+    <p>
+      NeoShop is a next-gen e-commerce experience inspired by Flipkart & Amazon.
+    </p>
+  </section>
+
+  <section id="login">
+    <div class="auth-container">
+      <div class="form-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <div id="loginError" class="error"></div>
+        </form>
+      </div>
+
+      <div class="form-box">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <input type="text" id="regName" placeholder="Full Name" required />
+          <input type="email" id="regEmail" placeholder="Email" required />
+          <input type="password" id="regPassword" placeholder="Password" required />
+          <button type="submit">Register</button>
+          <div id="regError" class="error"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>   2025 santhosh Shop | Designed for Learning</p>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>
